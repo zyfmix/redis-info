@@ -109,10 +109,10 @@ type Server struct {
 func (s *Server) fromString(content string) error { return parseStruct(s, content) }
 
 type Client struct {
-	ConnectedClients        int64 `json:"connected_clients"`
-	ClientLongestOutputList int64 `json:"client_longest_output_list"`
-	ClientBiggestInputBuf   int64 `json:"client_biggest_input_buf"`
-	BlockedClients          int64 `json:"blocked_clients"`
+	ConnectedClients        int64  `json:"connected_clients"`
+	ClientLongestOutputList string `json:"client_longest_output_list"`
+	ClientBiggestInputBuf   string `json:"client_biggest_input_buf"`
+	BlockedClients          int64  `json:"blocked_clients"`
 }
 
 func (s *Client) fromString(content string) error { return parseStruct(s, content) }

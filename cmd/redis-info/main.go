@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/geoffreybauduin/redis-info"
+	"github.com/zyfmix/redis-info"
 )
 
 func main() {

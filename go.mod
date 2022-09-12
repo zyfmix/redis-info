@@ -1,4 +1,4 @@
-module github.com/geoffreybauduin/redis-info
+module github.com/zyfmix/redis-info
 
 go 1.13
 

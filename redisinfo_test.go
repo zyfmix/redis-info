@@ -5,9 +5,9 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/geoffreybauduin/redis-info"
 	td "github.com/maxatome/go-testdeep"
 	"github.com/stretchr/testify/assert"
+	"github.com/zyfmix/redis-info"
 )
 
 func Test_Full(t *testing.T) {
@@ -40,8 +40,8 @@ func Test_Full(t *testing.T) {
 				},
 				Clients: redisinfo.Client{
 					ConnectedClients:        914,
-					ClientLongestOutputList: 0,
-					ClientBiggestInputBuf:   0,
+					ClientLongestOutputList: "",
+					ClientBiggestInputBuf:   "",
 					BlockedClients:          20,
 				},
 				Memory: redisinfo.Memory{
